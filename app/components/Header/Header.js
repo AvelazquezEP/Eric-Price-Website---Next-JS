@@ -1,10 +1,12 @@
 import Link from 'next/link';
-import Li from './li';
+import Li from '../utils/li';
+import Hero from './Hero'
 
 export default function Header() {
     return (
-        <header className='flex justify-between py-2 px-4 bg-slate-700'>
-            <nav className='w-full flex justify-between items-center'>
+        // We change the 
+        <header className='bg-slate-800 h-screen'>
+            <nav className='w-full flex justify-between py-2 px-4 items-center bg-slate-700'>
                 {/* LOGO */}
                 <div className=''>
                     <Link href="/" className='flex items-center'>
@@ -28,11 +30,11 @@ export default function Header() {
                                 English
                             </Link>
                         </li>
-                        {/* <Li href='/' title='English' className='text-black' /> */}
                     </ul>
                     {/* </div> */}
                 </div>
             </nav>
+            <Hero />
         </header>
     );
 }
