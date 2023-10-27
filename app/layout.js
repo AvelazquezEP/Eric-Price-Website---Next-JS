@@ -47,6 +47,8 @@ export default function Layout({ children }) {
 
         {/* FOOTER SECTION */}
         <Footer />
+
+        {/* <script src="./components/Header/toggle.js"></script> */}
       </body>
     </html>
   )

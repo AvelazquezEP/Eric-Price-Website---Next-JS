@@ -35,13 +35,13 @@ export default function Hero() {
                 </div>
             </section>
             <section>
-                <Image
+                {/* <Image
                     src='/images/EP_heroSection.png'
                     width={500}
                     height={500}
                     alt='Eric Price Picture'
                     className='mx-auto w-[27rem]'
-                />
+                /> */}
             </section>
         </div>
     );

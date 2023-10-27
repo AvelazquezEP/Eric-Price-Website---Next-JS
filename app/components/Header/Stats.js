@@ -5,7 +5,7 @@ export default function Stats() {
         <section className="text-center bg-gray-100">
             <div
                 className="flex flex-col justify-around items-center text-gray-500 p-4 gap-10 md:flex-row mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-                <p class="text-2xl font-semibold">
+                <p className="text-2xl font-semibold">
                     Nuestro equipo se dedica a terminar con éxito los casos de nuestros clientes.
                 </p>
             </div>
