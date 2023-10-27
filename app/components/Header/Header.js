@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Li from '../utils/li';
 import Hero from './Hero'
+import Stats from './Stats';
 
 export default function Header() {
     return (
@@ -35,6 +36,7 @@ export default function Header() {
                 </div>
             </nav>
             <Hero />
+            <Stats />
         </header>
     );
 }
