@@ -5,13 +5,41 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const menuItems = [
-    'Servicios',
-    'Nosotros',
-    'Nuestro Equipo',
-    'FAQ',
-    'Testimonios',
-    'Blog',
-    'Contacto',
+    {
+        id: 1,
+        link: 'Servicios',
+        name: 'Servicios',
+    },
+    {
+        id: 2,
+        link: 'Nosotros',
+        name: 'Nosotros',
+    },
+    {
+        id: 3,
+        link: 'Nuestro Equipo',
+        name: 'Nuestro Equipo',
+    },
+    {
+        id: 4,
+        link: 'FAQ',
+        name: 'FAQ',
+    },
+    {
+        id: 5,
+        link: 'Testimonios',
+        name: 'Testimonios',
+    },
+    {
+        id: 6,
+        link: 'Blog',
+        name: 'Blog',
+    },
+    {
+        id: 7,
+        link: 'Contacto',
+        name: 'Contacto',
+    },
 ];
 
 const englishItem = 'English';
@@ -46,13 +74,16 @@ export default function Nav() {
                 <div className="flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent p-4 lg:p-0 z-20"
                     id="nav-content">
                     <ul className='list-reset lg:flex justify-end flex-1 items-center text-gray-600 gap-5'>
-                        <Li href='/' title='Servicios' />
+                        {menuItems.map(({ id, link, name }) => (
+                            <Li href={link} title={name} />
+                        ))}
+                        {/* <Li href='/' title='Servicios' />
                         <Li href='/' title='Nosotros' />
                         <Li href='/' title='Nuestro Equipo' />
                         <Li href='/' title='FAQ' />
                         <Li href='/' title='Testimonios' />
                         <Li href='/' title='Blog' />
-                        <Li href='/' title='Contacto' />
+                        <Li href='/' title='Contacto' /> */}
                         <li>
                             <Link href='/'
                                 className='inline-block no-underline bg-orange-400 hover:bg-orange-500 rounded hover:text-gray-50 hover:text-underline py-2 px-4 lg:text-white'>
