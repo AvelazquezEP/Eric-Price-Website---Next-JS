@@ -6,7 +6,7 @@ import Socialmediaitem from "./Socialmediaitem";
 
 export default function Infodetails() {
     return (
-        <div> {/* md:w-4/12 */}
+        <div className=" md:w-4/12 md:mx-auto"> {/* md:w-4/12 */}
             <div className="mb-6">
                 <Link href='/' title="Home">
                     <Image

@@ -3,44 +3,7 @@ import Li from "../utils/li";
 import Image from 'next/image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-
-const menuItems = [
-    {
-        id: 1,
-        link: 'Servicios',
-        name: 'Servicios',
-    },
-    {
-        id: 2,
-        link: 'Nosotros',
-        name: 'Nosotros',
-    },
-    {
-        id: 3,
-        link: 'Nuestro Equipo',
-        name: 'Nuestro Equipo',
-    },
-    {
-        id: 4,
-        link: 'FAQ',
-        name: 'FAQ',
-    },
-    {
-        id: 5,
-        link: 'Testimonios',
-        name: 'Testimonios',
-    },
-    {
-        id: 6,
-        link: 'Blog',
-        name: 'Blog',
-    },
-    {
-        id: 7,
-        link: 'Contacto',
-        name: 'Contacto',
-    },
-];
+import { menuItems } from "../utils/menuItems";
 
 const englishItem = 'English';
 
