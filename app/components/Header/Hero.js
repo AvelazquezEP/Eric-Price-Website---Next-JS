@@ -16,7 +16,7 @@ export default function Hero() {
                 </p>
                 <div className='flex flex-grow gap-4 items-center mt-4 lg:flex-col lg:items-start'>
                     <button
-                    // w-11/12 lg:w-2/6
+                        // w-11/12 lg:w-2/6
                         className=' bg-orange-400 hover:bg-orange-500 text-white font-semibold py-3 px-4 rounded'>
                         <Link href="tel:(855)662-2772" className='text-[1.1rem]'>
                             {/* <i className="fa-solid fa-phone"></i> */}
