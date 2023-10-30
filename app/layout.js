@@ -22,12 +22,12 @@ export default function Layout({ children }) {
     <html lang="en">
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='' />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
           rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
         <link rel="icon" href="/favicon.ico" />
-        <script src="https://kit.fontawesome.com/b50aac37d5.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/b50aac37d5.js" crossOrigin="anonymous"></script>
         <meta
           name='description'
           content='Si esta buscando un abogado para su proceso de inmigración a llegado a la mejor oficina. El abogado Eric Price es  Ex-Fiscal de ICE y tiene años de experiencia. ¡Hable hoy para reservar su consulta gratis!'

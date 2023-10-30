@@ -1,18 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faEnvelope, fafacebook, faBrandTiktok, faInstagram, faYoutube } from "@fortawesome/free-solid-svg-icons";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Socialmediaitem from "./Socialmediaitem";
 
 export default function Infodetails() {
     return (
-        <div className=" md:w-4/12 md:mx-auto"> {/* md:w-4/12 */}
+        <div className=" md:w-4/12 md:mx-auto">
             <div className="mb-6">
                 <Link href='/' title="Home">
                     <Image
                         src='/images/EricpriceLogo-white.svg'
-                        width={0}
-                        height={0}
+                        width={10}
+                        height={10}
                         alt='Attorney Eric Price Logo'
                         className='w-[15rem] mx-auto pb-4'
                     />
