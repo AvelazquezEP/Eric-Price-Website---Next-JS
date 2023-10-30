@@ -49,7 +49,7 @@ export default function Nav() {
     return (
         // w-full z-30 top-0
         <nav id="header" className="w-full z-30 top-0">
-            <div className="mx-auto flex flex-wrap items-center justify-between mt-0 py-2 max-w-screen-xl sm:py-5 px-4">
+            <div className="mx-auto flex flex-wrap items-center justify-between py-2 max-w-screen-xl sm:py-5 px-4">
                 <div className="">
                     <Link href='/'>
                         <Image

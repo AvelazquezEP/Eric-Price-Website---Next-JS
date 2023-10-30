@@ -7,8 +7,8 @@ import Stats from './Stats';
 export default function Header() {
     return (
         // We change the 
-        <header className='bg-slate-800' id='Header'>
-            <div className='h-screen'> {/* BACKGROUND BLUE DEGRADED */}
+        <header id='Header'>
+            <div className='bg-slate-800'> {/* BACKGROUND BLUE DEGRADED */}
                 {/* NAVIGATION */}
                 <Nav />
 
