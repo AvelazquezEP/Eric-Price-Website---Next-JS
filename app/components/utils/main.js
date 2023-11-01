@@ -1,6 +1,7 @@
 export default function Main({ children }) {
     return (
-        <main className='flex min-h-screen flex-col items-center justify-between p-24'>
+        // bg-slate-300 mt-8 
+        <main className='flex flex-col items-center justify-between p-16'>
             {children}
         </main>
     );

@@ -1,5 +1,5 @@
 import Li from "../utils/li";
-import { menuItems } from "../utils/menuItems";
+import { menuItems } from "../../Data/menuItems";
 
 
 export default function Siteroute() {

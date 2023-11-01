@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import Li from '../utils/li';
 import Nav from './Nav';
-import Hero from './Hero'
+import Hero from './Hero';
 import Stats from './Stats';
+import Carousel from './Carousel';
 
 export default function Header() {
     return (
@@ -17,6 +18,9 @@ export default function Header() {
             </div>
             {/* STATS SECTION */}
             <Stats />
+
+            {/* CAROUSEL SECTION */}
+            <Carousel />
         </header>
     );
 }

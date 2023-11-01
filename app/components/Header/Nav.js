@@ -3,7 +3,7 @@ import Li from "../utils/li";
 import Image from 'next/image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { menuItems } from "../utils/menuItems";
+import { menuItems } from "../../Data/menuItems";
 
 const englishItem = 'English';
 
@@ -21,6 +21,7 @@ export default function Nav() {
                             height={150}
                             alt="Attorney Eric Price Logo"
                             className="h-9"
+                            loading="eager"
                         />
                     </Link>
                 </div>
@@ -37,16 +38,9 @@ export default function Nav() {
                 <div className="flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent p-4 lg:p-0 z-20"
                     id="nav-content">
                     <ul className='list-reset lg:flex justify-end flex-1 items-center text-gray-600 gap-5'>
-                        {menuItems.map(({ id, link, name }) => (
+                        {menuItems.map(({ link, name }) => (
                             <Li href={link} title={name} />
                         ))}
-                        {/* <Li href='/' title='Servicios' />
-                        <Li href='/' title='Nosotros' />
-                        <Li href='/' title='Nuestro Equipo' />
-                        <Li href='/' title='FAQ' />
-                        <Li href='/' title='Testimonios' />
-                        <Li href='/' title='Blog' />
-                        <Li href='/' title='Contacto' /> */}
                         <li>
                             <Link href='/'
                                 className='inline-block no-underline bg-orange-400 hover:bg-orange-500 rounded hover:text-gray-50 hover:text-underline py-2 px-4 lg:text-white'>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocation } from "@fortawesome/free-solid-svg-icons";
-import { itemOffice } from "../utils/menuOffice";
+import { itemOffice } from "../../Data/menuOffice";
 
 export default function Itemoffice() {
     return (
