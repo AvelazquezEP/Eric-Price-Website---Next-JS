@@ -14,7 +14,7 @@ export default function Carousel() {
                     loading="eager"
                 />
             ))} */}
-            
+
             {Carouselitems.map(({ link, alt }) => (
                 <Image
                     src={link}
