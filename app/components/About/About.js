@@ -6,7 +6,7 @@ import { Sellositem } from '../../Data/Sellositem';
 
 export default function About() {
     return (
-        <section className="flex flex-col gap-8 mt-16 sm:py-16 lg:px-6" id="Nosotros">
+        <section className="mt-16 sm:py-16 lg:px-6" id="Nosotros">
             <Title title='Lo que nos hace únicos' />
             <div className="flex flex-col gap-4 border-t pt-10 lg:flex-row">
                 <div className="lg:w-1/2">
@@ -28,7 +28,7 @@ export default function About() {
                         de que podemos ayudarlo" />
                 </div>
             </div>
-            <div className="grid grid-cols-2 gap-2 place-content-center lg:grid-cols-4">
+            <div className="mt-4 grid grid-cols-2 gap-2 place-content-center lg:grid-cols-4">
                 {Sellositem.map(({ link, alt }) => (
                     <Itemsello link={link} alt={alt} />
                 ))}
