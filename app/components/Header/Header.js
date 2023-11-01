@@ -4,12 +4,14 @@ import Nav from './Nav';
 import Hero from './Hero';
 import Stats from './Stats';
 import Carousel from './Carousel';
+import layouModule from '../layout.module.css';
 
 export default function Header() {
     return (
         // We change the 
         <header id='Header'>
-            <div className='bg-slate-800'> {/* BACKGROUND BLUE DEGRADED */}
+            {/* bg-slate-800 */}
+            <div className={layouModule.headerBackground}> {/* BACKGROUND BLUE DEGRADED */}
                 {/* NAVIGATION */}
                 <Nav />
 

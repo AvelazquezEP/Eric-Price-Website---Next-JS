@@ -13,3 +13,19 @@
 .backToHome {
     margin: 3rem 0 0;
 }
+
+.headerBackground {
+    background-image:
+        linear-gradient(45deg,
+            rgba(32, 32, 32, 0.9),
+            rgba(22, 22, 22, 0.9)), url(/Images/blueBG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cta {
+    background-image:
+        linear-gradient(45deg,
+            rgba(32, 32, 32, 0.9),
+            rgba(22, 22, 22, 0.9)), url(/Images/lawCover.webp);
+}

@@ -6,7 +6,7 @@ import { serviceItems } from '../../Data/serviceItems';
 
 export default function Servicios() {
     return (
-        <section className="mt-16 sm:py-16 lg:px-6" id="Servicios">
+        <section className="mt-16 sm:py-16 lg:px-6 p-16" id="Servicios">
             <Title title="Principales Servicios" />
             <div className="flex flex-col gap-4 border-t pt-10 lg:flex-row">
                 <div className="mx-auto">

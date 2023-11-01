@@ -6,7 +6,7 @@ import { Sellositem } from '../../Data/Sellositem';
 
 export default function About() {
     return (
-        <section className="mt-16 sm:py-16 lg:px-6" id="Nosotros">
+        <section className="mt-16 sm:py-16 lg:px-6 p-16" id="Nosotros">
             <Title title='Lo que nos hace únicos' />
             <div className="flex flex-col gap-4 border-t pt-10 lg:flex-row">
                 <div className="lg:w-1/2">
