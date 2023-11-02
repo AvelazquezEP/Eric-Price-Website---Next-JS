@@ -40,10 +40,10 @@ export default function Infodetails() {
             </div>
             {/* SOCIAL MEDIA */}
             <div className="flex flex-row justify-around w-4/5 mx-auto">
-                <Socialmediaitem href='/images/icons/facebook.svg' />
-                <Socialmediaitem href='/images/icons/tiktok.svg' />
-                <Socialmediaitem href='/images/icons/instagram.svg' />
-                <Socialmediaitem href='/images/icons/youtube.svg' />
+                <Socialmediaitem icon='/images/icons/facebook.svg' href='/' />
+                <Socialmediaitem icon='/images/icons/tiktok.svg' href='/' />
+                <Socialmediaitem icon='/images/icons/instagram.svg' href='/' />
+                <Socialmediaitem icon='/images/icons/youtube.svg' href='/' />
             </div>
         </div>
     );

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import Socialmediaitem from "../Footer/Socialmediaitem";
 
@@ -10,7 +9,8 @@ export default function Memberitems({ name, city, facebook, tiktok, instagram })
                 <p className="text-xl text-gray-600">{city}</p>
             </div>
             <div className="flex">
-                <button class="bg-orange-400 px-4 py-2 rounded-full text-white hover:bg-orange-500 mx-auto shadow-lg">
+                <button
+                    className="bg-orange-400 px-4 py-2 rounded-full text-white hover:bg-orange-500 mx-auto shadow-lg">
                     <Link href="/">
                         sobre mi
                     </Link>
