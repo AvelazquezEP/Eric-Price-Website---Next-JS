@@ -1,6 +1,6 @@
 import Title from "../utils/title";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 import Itemservice from "./Itemservice";
 import { serviceItems } from '../../Data/serviceItems';
 

@@ -6,6 +6,7 @@ import Cta from './components/Cta/Cta';
 import Team from './components/Team/Team';
 import Faq from './components/FAQ/Faq';
 import Testimonios from './components/Testimonios/Testimonios';
+import Blog from './components/Blog/Blog';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Team />
       <Faq />
       <Testimonios />
+      <Blog />
     </Main>
   )
 }
