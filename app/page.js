@@ -7,6 +7,7 @@ import Team from './components/Team/Team';
 import Faq from './components/FAQ/Faq';
 import Testimonios from './components/Testimonios/Testimonios';
 import Blog from './components/Blog/Blog';
+import Form from './components/Form/Form';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Faq />
       <Testimonios />
       <Blog />
+      <Form />
     </Main>
   )
 }
