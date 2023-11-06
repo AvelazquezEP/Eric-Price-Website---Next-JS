@@ -1,8 +1,7 @@
 import Title from "../utils/title";
-import submitForm from './submitForm';
+// import { submitForm } from './submitForm';
 
 let title = 'Contacto';
-
 
 export default function test() {
     return (
@@ -97,7 +96,7 @@ export default function test() {
                                     Registrarse para recibir mensajes de texto
                                 </label>
                                 <div className="radioGroup">
-                                    <input type="radio" id="00N5f00000SB1XU" name="00N5f00000SB1XU" name="Agree" value='yes' checked='true' />
+                                    <input type="radio" id="00N5f00000SB1XU" name="00N5f00000SB1XU" name="Agree" value='yes' defaultChecked={true} />
                                     <label htmlFor="Agree">Estoy de acuerdo</label>
                                 </div>
                                 <div className="radioGroup">

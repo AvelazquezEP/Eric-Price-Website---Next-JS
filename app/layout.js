@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+// import './components/Form/loader'
 
 config.autoAddCss = false;
 
@@ -51,6 +52,7 @@ export default function Layout({ children }) {
         {/* <script src="./components/Header/toggle.js"></script> */}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
         </script>
+        <script src="./components/Form/submitForm.js"></script>
       </body>
     </html>
   )

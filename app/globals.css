@@ -26,8 +26,11 @@
     rgb(var(--background-start-rgb));
 } */
 
-img {
-  max-width: 100%;
+img,
+Image {
+  /* max-width: 100%; */
+  width: auto;
+  height: auto;
 }
 
 body {

@@ -18,10 +18,11 @@ export default function Nav() {
                         <Image
                             src='/images/EricpriceLogo-white.svg'
                             width={150}
-                            height={150}
+                            height={39}
                             alt="Attorney Eric Price Logo"
                             className="h-9"
                             loading="eager"
+                            style="width: auto; height: auto;"
                         />
                     </Link>
                 </div>
@@ -38,8 +39,8 @@ export default function Nav() {
                 <div className="flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 lg:bg-transparent p-4 lg:p-0 z-20"
                     id="nav-content">
                     <ul className='list-reset lg:flex justify-end flex-1 items-center text-gray-600 gap-5'>
-                        {menuItems.map(({ link, name }) => (
-                            <Li href={link} title={name} />
+                        {menuItems.map(({ id, link, name }) => (
+                            <Li id={id} href={link} title={name} />
                         ))}
                         <li>
                             <Link href='/'

@@ -8,9 +8,10 @@ export default function Socialmediaitem({ href, icon }) {
             <Link href={href} target="_blank">
                 <Image
                     src={icon}
-                    width={26}
-                    height={26}
+                    width={30}
+                    height={30}
                     alt='Social Media Icon'
+                    className="w-6"
                 />
             </Link>
         </div>
