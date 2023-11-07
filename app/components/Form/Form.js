@@ -119,7 +119,7 @@ export default function test() {
                                 <button
                                     name="sendButton"
                                     id="ButtonSend"
-                                    className="w-11/12 py-2.5 px-5 mr-2 mb-2 text-xl font-medium text-white focus:outline-none rounded-lg border border-gray-200 focus:z-10 focus:ring-4 focus:ring-gray-200">
+                                    className="bg-orange-400 w-11/12 py-2.5 px-5 mr-2 mb-2 text-xl font-medium text-white focus:outline-none rounded-lg border border-gray-200 focus:z-10 focus:ring-4 focus:ring-gray-200">
                                     Enviar
                                 </button>
                             </div>
