@@ -55,10 +55,10 @@ export default function test() {
                                 <input id="mobile" type="text" name="mobile" maxLength={10} size={20}
                                     className="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                                     placeholder="8556622772"
-                                    onKeyDown="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
+                                    // onKeyDown="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
                                     // onKeyPress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))"
                                     pattern="\d*"
-                                    onPaste="return false;"
+                                    // onPaste="return false;"
                                     required />
                                 <span id="emailInput" className="text-red-400"></span>
                             </div>
