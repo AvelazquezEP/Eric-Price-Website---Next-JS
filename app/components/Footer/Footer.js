@@ -18,9 +18,9 @@ export default function Footer() {
                 <Office />
             </div>
 
-            {/* PAUSE */}
+            {/* PAUSE
             <div className="">
-            </div>
+            </div> */}
         </footer>
     );
 }

@@ -4,7 +4,7 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export default function Hero() {
     return (
-        <div div className='flex flex-col items-center lg:justify-around lg:flex-row px-4 mx-auto max-w-screen-xl lg:px-6'>
+        <div className='flex flex-col items-center lg:justify-around lg:flex-row px-4 mx-auto max-w-screen-xl lg:px-6'>
             <section className='lg:w-1/2 p-12 text-white'>
                 <span className='text-xl text-gray-300'>Tu abogado de confianza</span>
                 <h1 className='text-4xl leading-10 mt-8 font-bold'>

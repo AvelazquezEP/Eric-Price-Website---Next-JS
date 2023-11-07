@@ -6,7 +6,7 @@ export default function TestimonioItem() {
             <figure
                 className="flex flex-col justify-center items-center text-center bg-[#001E3E] border-b border-gray-200 lg:border-r">
                 <iframe width="100%" height="400" src="https://www.youtube.com/embed/UhUdOSGlqHY"
-                    title="YouTube video player" frameborder="0"
+                    title="YouTube video player" className="border-0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen>
                 </iframe>
@@ -64,7 +64,7 @@ export default function TestimonioItem() {
             <figure
                 className="flex flex-col justify-center items-center text-center bg-[#001E3E] border-b border-gray-200  lg:border-r">
                 <iframe width="100%" height="400" src="https://www.youtube.com/embed/f4lRKylLCCA"
-                    title="YouTube video player" frameborder="0"
+                    title="YouTube video player" className="border-0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen data-aos="fade-right">
                 </iframe>

@@ -1,5 +1,4 @@
 import Title from "../utils/title";
-// import { submitForm } from './submitForm';
 
 let title = 'Contacto';
 let text_area_content = "By entering my mobile number and checking this box I agree to receive case status updates, meeting updates, and legal news notifications from Abogado Eric Price Los Angeles Immigration Attorneys. Message frequency varies. Text HELP to 94289 for help. Text STOP to 94289 to end. Msg & data rates may apply. By opting in, I authorize Abogado Eric Price Los Angeles Immigration Attorneys to deliver SMS messages using an automatic telephone dialing system and I understand that I am not required to opt in as a condition of purchasing any property, goods, or services. By leaving this box unchecked you will not be opted in for SMS messages at this time. Click to read";
@@ -7,7 +6,8 @@ let text_area_content = "By entering my mobile number and checking this box I ag
 export default function test() {
     return (
         <section className="mt-16 sm:py-16 lg:px-6 p-16">
-            <Title title={title} />
+            {/* <Title title={title} /> */}
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-90">{title}</h2>
             <p
                 className="mb-8 lg:mb-16 font-normal text-center text-gray-500 sm:text-xl">
                 En Abogado Eric Price podemos ayudarte a cumplir tus sueños de inmigración. Pide tu consulta gratuita
@@ -93,18 +93,33 @@ export default function test() {
                             </div>
 
                             <div>
+                                <label className="block mb-2 text-sm font-medium text-gray-900">
+                                    Registrarse para recibir mensajes de texto
+                                </label>
+                                <div className="radioGroup">
+                                    <input type="radio" id="00N5f00000SB1XU" name="00N5f00000SB1XU" name="Agree" value="Yes" defaultChecked="true" />
+                                    <label>Estoy de acuerdo</label>
+                                </div>
+                                <div className="radioGroup">
+                                    <input type="radio" id="00N5f00000SB1XU" name="00N5f00000SB1XU" name="Idisagree"
+                                        value="No" />
+                                    <label>No estoy de acuerdo</label>
+                                </div>
+                            </div>
+
+                            {/* <div>
                                 <label htmlFor="" className="block mb-2 text-sm font-medium text-gray-900">
                                     Registrarse para recibir mensajes de texto
                                 </label>
                                 <div className="radioGroup">
-                                    <input type="radio" id="00N5f00000SB1XU" name="00N5f00000SB1XU" name="Agree" value='yes' defaultChecked={true} />
+                                    <input type="radio" id="00N5f00000SB1XU" name="Agree" name="00N5f00000SB1XU" value='yes' checked={true} />
                                     <label htmlFor="Agree">Estoy de acuerdo</label>
                                 </div>
                                 <div className="radioGroup">
-                                    <input type="radio" id="00N5f00000SB1XU" name="00N5f00000SB1XU" name="Idisagree" value='No' />
+                                    <input type="radio" id="00N5f00000SB1XU" name="Idisagree" name="00N5f00000SB1XU" value='No' />
                                     <label htmlFor="Idisagree">No estoy de acuerdo</label>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div>
                                 <textarea disabled name="policy" cols="30" rows="3"
