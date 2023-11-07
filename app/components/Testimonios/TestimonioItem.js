@@ -8,7 +8,7 @@ export default function TestimonioItem() {
                 <iframe width="100%" height="400" src="https://www.youtube.com/embed/UhUdOSGlqHY"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
+                    allowFullScreen>
                 </iframe>
             </figure>
 
@@ -66,7 +66,7 @@ export default function TestimonioItem() {
                 <iframe width="100%" height="400" src="https://www.youtube.com/embed/f4lRKylLCCA"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen data-aos="fade-right">
+                    allowFullScreen data-aos="fade-right">
                 </iframe>
             </figure>
         </div>
