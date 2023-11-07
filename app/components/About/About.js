@@ -15,6 +15,7 @@ export default function About() {
                         width={500}
                         height={500}
                         className="mx-auto w-[40rem]"
+                        alt="Testimonial"
                     />
                 </div>
                 <div className="lg:w-1/2 grid grid-cols-1 gap-4 px-4 mt-4 md:grid-cols-2">
