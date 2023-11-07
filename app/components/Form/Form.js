@@ -108,20 +108,6 @@ export default function test() {
                                 </div>
                             </div>
 
-                            {/* <div>
-                                <label htmlFor="" className="block mb-2 text-sm font-medium text-gray-900">
-                                    Registrarse para recibir mensajes de texto
-                                </label>
-                                <div className="radioGroup">
-                                    <input type="radio" id="00N5f00000SB1XU" name="Agree" name="00N5f00000SB1XU" value='yes' checked={true} />
-                                    <label htmlFor="Agree">Estoy de acuerdo</label>
-                                </div>
-                                <div className="radioGroup">
-                                    <input type="radio" id="00N5f00000SB1XU" name="Idisagree" name="00N5f00000SB1XU" value='No' />
-                                    <label htmlFor="Idisagree">No estoy de acuerdo</label>
-                                </div>
-                            </div> */}
-
                             <div>
                                 <textarea disabled name="policy" cols="30" rows="3"
                                     className="block p-2.5 border-none resize-none
