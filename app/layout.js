@@ -52,6 +52,7 @@ export default function Layout({ children }) {
         {/* <script src="./components/Header/toggle.js"></script> */}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
         </script>
+        <script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
         {/* <script src="./components/Form/submitForm.js"></script> */}
       </body>
     </html>

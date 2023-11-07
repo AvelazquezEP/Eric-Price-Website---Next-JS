@@ -10,3 +10,11 @@
 
 //     console.log(first_name);
 // })
+
+export default function logtest() {
+    const log = console.log;
+
+    let first_name = document.getElementById('first_name').value;
+
+    log(first_name);
+}

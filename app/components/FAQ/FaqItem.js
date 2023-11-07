@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+// export default function FaqItem() {
 export default function FaqItem() {
     return (
         <div className='grid grid-cols-1 md:gap-8 md:grid-cols-2'>
