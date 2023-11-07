@@ -3,7 +3,7 @@ import Layoutmodule from '../layout.module.css';
 
 export default function Circleimage({ src, alt }) {
     return (
-        <div class={Layoutmodule.circle}>
+        <div className={Layoutmodule.circle}>
             <Image
                 src={src}
                 width={300}
