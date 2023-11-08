@@ -98,11 +98,14 @@ export default function test() {
                                     Registrarse para recibir mensajes de texto
                                 </label>
                                 <div className="radioGroup">
-                                    <input type="radio" id="00N5f00000SB1XU" name="00N5f00000SB1XU" name="Agree" value="Yes" defaultChecked="true" />
+                                    {/* name="Agree" */}
+                                    <input type="radio" id="00N5f00000SB1XU1" name="00N5f00000SB1XU"
+                                        value="Yes" defaultChecked="true" />
                                     <label>Estoy de acuerdo</label>
                                 </div>
                                 <div className="radioGroup">
-                                    <input type="radio" id="00N5f00000SB1XU" name="00N5f00000SB1XU" name="Idisagree"
+                                    {/* name="Idisagree" */}
+                                    <input type="radio" id="00N5f00000SB1XU" name="00N5f00000SB1XU"
                                         value="No" />
                                     <label>No estoy de acuerdo</label>
                                 </div>
