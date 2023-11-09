@@ -2,6 +2,7 @@
 import './globals.css';
 import Head from 'next/head';
 import Header from './components/Header/Header';
+import Nav from './components/Header/Nav';
 import Footer from './components/Footer/Footer';
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -38,16 +39,15 @@ export default function Layout({ children }) {
         <meta name='og:title' content={siteTitle} />
       </Head>
 
-      {/* <body className={inter.className}> */}
       <body className='bg-gray-50'>
         {/* HEADER SECTION */}
-        {/* <Header /> */}
+        <Nav />
 
         {/* MAIN CONTENT */}
         {children}
 
         {/* FOOTER SECTION */}
-        {/* <Footer /> */}
+        <Footer />
 
         {/* <script src="./components/Header/toggle.js"></script> */}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">

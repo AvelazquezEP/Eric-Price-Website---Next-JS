@@ -1,4 +1,5 @@
 import Link from "next/link";
+import layouModule from '../layout.module.css';
 import Li from "../utils/li";
 import Image from 'next/image';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,8 +11,8 @@ const englishItem = 'English';
 export default function Nav() {
 
     return (
-        // w-full z-30 top-0
-        <nav id="header" className="w-full z-30 top-0">
+        // w-full z-30 top-0        
+        <nav id="header" className={`w-full z-30 top-0 ${layouModule.headerBackground}`}>
             <div className="mx-auto flex flex-wrap items-center justify-between py-2 max-w-screen-xl sm:py-5 px-4">
                 <div className="">
                     <Link href='/'>

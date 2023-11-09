@@ -13,7 +13,7 @@ export default function Header() {
             {/* bg-slate-800 */}
             <div className={layouModule.headerBackground}> {/* BACKGROUND BLUE DEGRADED */}
                 {/* NAVIGATION */}
-                <Nav />
+                {/* <Nav /> */}
 
                 {/* HERO SECTION */}
                 <Hero />

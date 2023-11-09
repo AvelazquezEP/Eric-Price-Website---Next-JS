@@ -6,7 +6,7 @@ let title = "Política de Privacidad";
 export default function Privacidad() {
     return (
         <main className="mt-16 px-4 mx-auto max-w-screen-lg sm:py-16 lg:px-6">
-            {/* <Title title={title} /> */}
+
             <h1 className="text-center text-2xl font-bold mt-8">{title}</h1>
 
             <div className="flex flex-col gap-4">
