@@ -11,7 +11,7 @@
 //     console.log(first_name);
 // })
 
-export default function logtest() {
+export default function submitForm() {
     const log = console.log;
 
     let first_name = document.getElementById('first_name').value;

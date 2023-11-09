@@ -41,13 +41,13 @@ export default function Layout({ children }) {
       {/* <body className={inter.className}> */}
       <body className='bg-gray-50'>
         {/* HEADER SECTION */}
-        <Header />
+        {/* <Header /> */}
 
         {/* MAIN CONTENT */}
         {children}
 
         {/* FOOTER SECTION */}
-        <Footer />
+        {/* <Footer /> */}
 
         {/* <script src="./components/Header/toggle.js"></script> */}
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">

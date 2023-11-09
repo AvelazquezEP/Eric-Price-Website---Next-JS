@@ -2,7 +2,7 @@ import Link from "next/link";
 import Infodetails from './Infodetails';
 import Siteroute from './Siteroute';
 import Office from './Office';
-
+import Privacy from "./Privacy";
 
 export default function Footer() {
     return (
@@ -18,9 +18,9 @@ export default function Footer() {
                 <Office />
             </div>
 
-            {/* PAUSE
-            <div className="">
-            </div> */}
+            {/* Privacy */}
+            <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+            <Privacy />
         </footer>
     );
 }
