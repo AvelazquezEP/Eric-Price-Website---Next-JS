@@ -8,7 +8,7 @@ const title = "Eric Price esta dispuesto a cumplir tus sueños";
 export default function Cta() {
     return (
         <section className={`${layoutModule.cta} mt-16`} id="CTA">
-            <article className="flex flex-col items-center text-center text-white py-9 lg:flex-row px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <article className="flex flex-col items-center text-center text-white py-9 lg:flex-row px-4 w-full mx-auto sm:py-16 lg:px-6">
                 <div className="lg:w-1/2 flex flex-col gap-5">
                     <h2 className="text-3xl font-bold leading-10 text-white">
                         {title}
