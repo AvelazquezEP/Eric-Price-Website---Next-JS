@@ -2,14 +2,14 @@ import Link from "next/link";
 
 export default function ItemTestimonio({ Title, Description, Name, City }) {
     return (
-        <section className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        
             <figure className="flex flex-col justify-center items-center p-6 text-center rounded md:p-12 bg-white">
                 <blockquote className="mx-auto max-w-2xl text-gray-800 text-center">
                     <h3 className="text-lg font-semibold">
                         {Title}
                     </h3>
                     <p>
-                        "{Description}"
+                        " {Description} "
                     </p>
                 </blockquote>
                 <figcaption className="flex flex-col justify-center items-center space-x-3 text-gray-800">
@@ -20,7 +20,6 @@ export default function ItemTestimonio({ Title, Description, Name, City }) {
                         </div>
                     </div>
                 </figcaption>
-            </figure>
-        </section>
+            </figure>        
     );
 }

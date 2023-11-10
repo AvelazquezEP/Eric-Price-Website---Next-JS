@@ -18,9 +18,11 @@ export default function test() {
             </div>
 
             <div className="bg-white mb-12 p-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-                {TestimonialesItems.map(({ Title, Description, Name, City }) =>
-                    <itemTestimonio Title={Title} Description={Description} Name={Name} City={City} />
-                )}
+                <section className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                    {TestimonialesItems.map(({ Title, Description, Name, City }) =>
+                        <ItemTestimonio Title={Title} Description={Description} Name={Name} City={City} />
+                    )}
+                </section>
             </div>
         </>
     );
