@@ -1,10 +1,12 @@
 import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import layouModule from '../layout.module.css';
 
 export default function Hero() {
     return (
-        <div className='flex flex-col items-center lg:justify-around lg:flex-row px-4 mx-auto max-w-screen-xl lg:px-6'>
+        // className={layouModule.headerBackground}
+        <div className={`flex flex-col items-center lg:justify-around lg:flex-row px-4 mx-auto max-w-screen-xl lg:px-6 ${layouModule.headerBackground}`}>
             <section className='lg:w-1/2 p-12 text-white'>
                 <span className='text-xl text-gray-300'>Tu abogado de confianza</span>
                 <h1 className='text-4xl leading-10 mt-8 font-bold'>
