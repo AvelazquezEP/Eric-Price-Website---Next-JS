@@ -4,7 +4,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 export default function itemAbout({ title, description }) {
     return (
         <figure
-            className="bg-white flex flex-col content-center items-center shadow-md py-4 px-4 rounded"
+            className="bg-white flex flex-col content-center justify-center items-center shadow-md px-4 rounded"
             data-aos="fade-right">
             <div>
                 {/* <i class="fa-sharp fa-solid fa-check text-5xl text-green-500"></i> */}
