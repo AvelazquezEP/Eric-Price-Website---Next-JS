@@ -7,7 +7,7 @@ export default function Privacy() {
     return (
         <div className="text-center flex flex-col items-center justify-center gap-3 md:flex-row md:justify-between">
             <span className="text-sm text-gray-500 sm:text-center">
-                © 2023 <Link href="/index.html" class="hover:underline">Eric Price™</Link>. Todos los derechos reservados.
+                © 2023 <Link href="/index.html" className="hover:underline">Eric Price™</Link>. Todos los derechos reservados.
             </span>
             <div>
                 <ul className="flex flex-col text-gray-500 md:flex-row">

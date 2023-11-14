@@ -13,7 +13,7 @@ export default function Privacidad() {
                 <h2 className="text-gray-800 font-semibold mb-4 text-xl">
                     ¿Qué Información Recopilamos?
                 </h2>
-                <p class="">
+                <p className="">
                     Recopilamos información sobre usted cuando se registra en nuestro sitio o completa un formulario.
                 </p>
 
@@ -43,15 +43,15 @@ export default function Privacidad() {
                 </p>
             </div>
 
-            <div class="pt-8 mt-10">
-                <div class="flex flex-col gap-4">
-                    <h2 class="text-gray-800 font-semibold mb-4 text-xl">
+            <div className="pt-8 mt-10">
+                <div className="flex flex-col gap-4">
+                    <h2 className="text-gray-800 font-semibold mb-4 text-xl">
                         ¿Para Qué Utilizamos su Información?
                     </h2>
                     <p>
                         Cualquier información que Recopilemos de usted puede usarse de una de las siguientes maneras:
                     </p>
-                    <ul class="list-decimal">
+                    <ul className="list-decimal">
                         <li>
                             <b> *-</b> Para personalizar su experiencia (su información nos ayuda a responder mejor a
                             sus
@@ -78,9 +78,9 @@ export default function Privacidad() {
                 </div>
             </div>
 
-            <div class="pt-8 mt-10">
-                <div class="flex flex-col gap-4">
-                    <h2 class="text-gray-800 font-semibold mb-4 text-xl">
+            <div className="pt-8 mt-10">
+                <div className="flex flex-col gap-4">
+                    <h2 className="text-gray-800 font-semibold mb-4 text-xl">
                         ¿Cómo Protegemos tu Información?
                     </h2>
                     <p>
@@ -112,9 +112,9 @@ export default function Privacidad() {
                 </div>
             </div>
 
-            <div class="pt-8 mt-10">
-                <div class="flex flex-col gap-4">
-                    <h2 class="text-gray-800 font-semibold mb-4 text-xl">¿Usamos Cookies?</h2>
+            <div className="pt-8 mt-10">
+                <div className="flex flex-col gap-4">
+                    <h2 className="text-gray-800 font-semibold mb-4 text-xl">¿Usamos Cookies?</h2>
                     <p>
                         Sí (las cookies son pequeños archivos que un sitio o su proveedor de servicios transfiere al
                         disco duro
@@ -131,9 +131,9 @@ export default function Privacidad() {
                 </div>
             </div>
 
-            <div class="pt-8 mt-10">
-                <div class="flex flex-col gap-4">
-                    <h2 class="text-gray-800 font-semibold mb-4 text-xl">¿Divulgamos Alguna Información a Terceros?</h2>
+            <div className="pt-8 mt-10">
+                <div className="flex flex-col gap-4">
+                    <h2 className="text-gray-800 font-semibold mb-4 text-xl">¿Divulgamos Alguna Información a Terceros?</h2>
                     <p>
                         No vendemos, intercambiamos ni transferimos a terceros su información de identificación
                         personal. Esto
@@ -158,9 +158,9 @@ export default function Privacidad() {
                 </div>
             </div>
 
-            <div class="pt-8 mt-10">
-                <div class="flex flex-col gap-4">
-                    <h2 class="text-gray-800 font-semibold mb-4 text-xl">Enlaces de Terceros</h2>
+            <div className="pt-8 mt-10">
+                <div className="flex flex-col gap-4">
+                    <h2 className="text-gray-800 font-semibold mb-4 text-xl">Enlaces de Terceros</h2>
                     <p>
                         Ocasionalmente, a nuestro criterio, podemos incluir u ofrecer productos o servicios de terceros
                         en
@@ -178,9 +178,9 @@ export default function Privacidad() {
                 </div>
             </div>
 
-            <div class="pt-8 mt-10">
-                <div class="flex flex-col gap-4">
-                    <h2 class="text-gray-800 font-semibold mb-4 text-xl">Cumplimiento de la Ley de Protección de
+            <div className="pt-8 mt-10">
+                <div className="flex flex-col gap-4">
+                    <h2 className="text-gray-800 font-semibold mb-4 text-xl">Cumplimiento de la Ley de Protección de
                         Privacidad en Línea de California</h2>
                     <p>
                         Debido a que valoramos su privacidad, hemos tomado las precauciones necesarias para cumplir con
@@ -203,9 +203,9 @@ export default function Privacidad() {
                 </div>
             </div>
 
-            <div class="pt-8 mt-10">
-                <div class="flex flex-col gap-4">
-                    <h2 class="text-gray-800 font-semibold mb-4 text-xl">Cumplimiento de la Ley de Protección de la
+            <div className="pt-8 mt-10">
+                <div className="flex flex-col gap-4">
+                    <h2 className="text-gray-800 font-semibold mb-4 text-xl">Cumplimiento de la Ley de Protección de la
                         Privacidad en Línea Para Niños</h2>
                     <p>
                         Cumplimos con los requisitos de la COPPA (Ley de protección de privacidad en línea para niños),
@@ -218,9 +218,9 @@ export default function Privacidad() {
                 </div>
             </div>
 
-            <div class="pt-8 mt-10">
-                <div class="flex flex-col gap-4">
-                    <h2 class="text-gray-800 font-semibold mb-4 text-xl">
+            <div className="pt-8 mt-10">
+                <div className="flex flex-col gap-4">
+                    <h2 className="text-gray-800 font-semibold mb-4 text-xl">
                         Política de Privacidad en Línea Solamente
                     </h2>
                     <p>
@@ -233,9 +233,9 @@ export default function Privacidad() {
                 </div>
             </div>
 
-            <div class="pt-8 mt-10">
-                <div class="flex flex-col gap-4">
-                    <h2 class="text-gray-800 font-semibold mb-4 text-xl">Términos y Condiciones</h2>
+            <div className="pt-8 mt-10">
+                <div className="flex flex-col gap-4">
+                    <h2 className="text-gray-800 font-semibold mb-4 text-xl">Términos y Condiciones</h2>
                     <p>
                         Visite también nuestra sección de términos y condiciones que establece el uso, renuncias y
                         limitaciones
@@ -245,18 +245,18 @@ export default function Privacidad() {
                 </div>
             </div>
 
-            <div class="pt-8 mt-10">
-                <div class="flex flex-col gap-4">
-                    <h2 class="text-gray-800 font-semibold mb-4 text-xl">Tu Consentimiento</h2>
+            <div className="pt-8 mt-10">
+                <div className="flex flex-col gap-4">
+                    <h2 className="text-gray-800 font-semibold mb-4 text-xl">Tu Consentimiento</h2>
                     <p>
                         Al usar nuestro sitio, usted acepta la política de privacidad de nuestros sitios web.
                     </p>
                 </div>
             </div>
 
-            <div class="pt-8 mt-10">
-                <div class="flex flex-col gap-4">
-                    <h2 class="text-gray-800 font-semibold mb-4 text-xl">Cambios a Nuestra Política de Privacidad</h2>
+            <div className="pt-8 mt-10">
+                <div className="flex flex-col gap-4">
+                    <h2 className="text-gray-800 font-semibold mb-4 text-xl">Cambios a Nuestra Política de Privacidad</h2>
                     <p>
                         Si decidimos cambiar nuestra política de privacidad, publicaremos esos cambios en esta página.
                     </p>
