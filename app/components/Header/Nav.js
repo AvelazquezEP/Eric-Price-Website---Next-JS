@@ -1,6 +1,6 @@
-import { useState } from "react";
+// "use client";
 import Link from "next/link";
-import NavStyle from '../../styles/nav.css'
+import { useState } from "react"
 import layouModule from '../layout.module.css';
 import Li from "../utils/li";
 import Image from 'next/image';
@@ -12,13 +12,16 @@ const englishItem = 'English';
 
 export default function Nav() {
 
+    const [isNavExpanded, setIsNavExpanded] = useState(false)
+
     return (
         <nav className="navigation">
             <a href="/" className="brand-name">
                 EP
             </a>
-            <button className="hamburger">
-                {/* icon from heroicons.com */}
+            <button className="hamburger" onClick={() => {
+                setIsNavExpanded(!isNavExpanded);
+            }}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5"
@@ -32,7 +35,8 @@ export default function Nav() {
                 </svg>
             </button>
             <div
-                className="navigation-menu">
+                // className="navigation-menu"
+                className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
                 <ul>
                     {menuItems.map(({ link, name }) =>
                         <Li href={link} title={name} />
