@@ -3,6 +3,7 @@ import './globals.css';
 import Head from 'next/head';
 import Header from './components/Header/Header';
 import Nav from './components/Header/Nav';
+import Navbar from './components/Header/navbar';
 import Footer from './components/Footer/Footer';
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -41,7 +42,8 @@ export default function Layout({ children }) {
 
       <body className='bg-gray-50'>
         {/* HEADER SECTION */}
-        <Nav />
+        {/* <Nav /> */}
+        <Navbar />
 
         {/* MAIN CONTENT */}
         {children}
