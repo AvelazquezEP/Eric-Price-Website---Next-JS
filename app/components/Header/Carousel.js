@@ -6,7 +6,7 @@ export default function Carousel() {
     return (
         <div className="whitespace-nowrap flex flex-row overflow-x-scroll">
             {Carouselitems.map(({ id, link, alt }) => (
-                <Carouselitem link={link} alt={alt} />                
+                <Carouselitem link={link} alt={alt} />
             ))}
         </div>
     );
