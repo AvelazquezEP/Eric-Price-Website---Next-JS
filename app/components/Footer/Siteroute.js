@@ -8,7 +8,7 @@ export default function Siteroute() {
             <h2 className="mb-4 font-semibold uppercase">Mapa del sitio</h2>
             <ul className="text-gray-200">
                 {menuItems.map(({ id, link, name }) =>
-                    <Li id={id} href={link} title={name} />
+                    <Li id={id} href={link} title={name} key={id} />
                 )}
             </ul>
         </div>

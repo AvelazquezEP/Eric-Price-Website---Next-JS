@@ -5,9 +5,9 @@ import layoutModule from '../layout.module.css'
 import { menuItems } from "../../Data/menuItems";
 import Image from "next/image";
 
-function NavLink({ to, children }) {
+function NavLink({ to, children, id }) {
     return (
-        <Link href={to} className="text-white mx-4">
+        <Link href={to} className="text-white mx-4" key={id}>
             {children}
         </Link>
     )
@@ -33,7 +33,7 @@ function MobileNav({ open, setOpen }) {
             <div className="flex flex-col ml-4">
                 <ul>
                     {menuItems.map(({ id, link, name }) =>
-                        <li id={id} className="text-xl font-medium my-4">
+                        <li id={id} className="text-xl font-medium my-4" key={id}>
                             <Link href={link} onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
                                 {name}
                             </Link>
@@ -77,8 +77,8 @@ export default function Navbar() {
                 </div>
 
                 <div className="hidden md:flex">
-                    {menuItems.map(({ link, name }) =>
-                        <NavLink to={link}>
+                    {menuItems.map(({ id, link, name }) =>
+                        <NavLink to={link} key={id}>
                             {name}
                         </NavLink>
                     )}

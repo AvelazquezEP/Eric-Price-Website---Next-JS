@@ -1,6 +1,6 @@
 // import { Inter } from 'next/font/google';
 import './globals.css';
-import Head from 'next/head';
+// import Head from 'next/head';
 import Header from './components/Header/Header';
 import Nav from './components/Header/Nav';
 import Navbar from './components/Header/navbar';
@@ -23,7 +23,7 @@ export const metadata = {
 export default function Layout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      {/* <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin='' />
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
@@ -38,7 +38,7 @@ export default function Layout({ children }) {
         <meta name='author' content='Eric Price' />
         <meta name='keywords' content='abogados de inmigración, abogado de inmigración en los Angeles, abogado eric price, Eric price, abogado de inmigración, abogado para green card, abogado para permiso de trabajo, abogado para residencia, inmigración, abogados de inmigracion, residencia, green card, ciudadanía, petición familiar, Immigration, immigration attorney, immigration attorney los Angeles, immigration attorneys' />
         <meta name='og:title' content={siteTitle} />
-      </Head>
+      </Head> */}
 
       <body className='bg-gray-50'>
         {/* HEADER SECTION */}
