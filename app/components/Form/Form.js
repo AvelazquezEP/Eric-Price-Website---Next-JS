@@ -6,7 +6,7 @@ let text_area_content = "By entering my mobile number and checking this box I ag
 
 export default function test() {
     return (
-        <section className="mt-16 sm:py-16 lg:px-6 p-16" id="Contact">
+        <section className="mt-16 sm:py-16 lg:px-6 p-16" id="Contacto">
             {/* <Title title={title} /> */}
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-90">{title}</h2>
             <p
