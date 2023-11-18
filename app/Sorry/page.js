@@ -49,12 +49,3 @@ export default function test() {
     // );
     // #endregion
 }
-
-// const fetcher = async () => {
-//     const res = await fetch(
-//         'https://eu-central-1.aws.webhooks.mongodb-realm.com/api/client/v2.0/app/lottigully-jjrda/service/movies/incoming_webhook/movies?arg=dexter'
-//     );
-//     const data = await res.json();
-//     return data;
-// };
-
