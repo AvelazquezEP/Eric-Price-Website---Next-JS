@@ -67,9 +67,7 @@ export default function test() {
                                     Lugar
                                 </label>
                                 <select id="00N5f00000SB1X0" name="00N5f00000SB1X0" title="Location"
-                                    className="shadow-sm bg-white border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-                                // onChange={changeLocation}
-                                >
+                                    className="shadow-sm bg-white border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
                                     <option value="">--None--</option>
                                     <option value="Chicago">Chicago</option>
                                     <option value="Los Angeles">Los Angeles</option>
