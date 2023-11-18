@@ -7,8 +7,7 @@ export default function Form() {
     return (
         <section className="mt-16 sm:py-16 lg:px-6 p-16" id="Contacto">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-90">{title}</h2>
-            <p
-                className="mb-8 lg:mb-16 font-normal text-center text-gray-500 sm:text-xl">
+            <p className="mb-8 lg:mb-16 font-normal text-center text-gray-500 sm:text-xl">
                 En Abogado Eric Price podemos ayudarte a cumplir tus sueños de inmigración. Pide tu consulta gratuita
                 comunicándote con nosotros hoy.
             </p>
