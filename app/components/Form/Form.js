@@ -90,16 +90,14 @@ export default function Form() {
                                     Registrarse para recibir mensajes de texto
                                 </label>
                                 <div className="radioGroup">
-                                    {/* name="Agree" */}
                                     <input type="radio" id="00N5f00000SB1XU1" name="00N5f00000SB1XU"
                                         value="Yes" defaultChecked="true" />
-                                    <label>Estoy de acuerdo</label>
+                                    <label className="ml-1">Estoy de acuerdo</label>
                                 </div>
                                 <div className="radioGroup">
-                                    {/* name="Idisagree" */}
                                     <input type="radio" id="00N5f00000SB1XU" name="00N5f00000SB1XU"
                                         value="No" />
-                                    <label>No estoy de acuerdo</label>
+                                    <label className="ml-1">No estoy de acuerdo</label>
                                 </div>
                             </div>
 
