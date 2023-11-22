@@ -1,11 +1,16 @@
 
+// 'use client'
+// import { useRouter } from 'next/router'
+// import { useState } from 'react'
 
 let title = 'Contacto';
 let text_area_content = "By entering my mobile number and checking this box I agree to receive case status updates, meeting updates, and legal news notifications from Abogado Eric Price Los Angeles Immigration Attorneys. Message frequency varies. Text HELP to 94289 for help. Text STOP to 94289 to end. Msg & data rates may apply. By opting in, I authorize Abogado Eric Price Los Angeles Immigration Attorneys to deliver SMS messages using an automatic telephone dialing system and I understand that I am not required to opt in as a condition of purchasing any property, goods, or services. By leaving this box unchecked you will not be opted in for SMS messages at this time. Click to read";
 
 export default function Form() {
+
     return (
-        <section className="mt-16 sm:py-16 lg:px-6 p-16" id="Contacto">
+        // <section className="mt-16 sm:py-16 lg:px-6 p-16" id="Contacto">
+        <form className="mt-16 sm:py-16 lg:px-6 p-16" id="Contacto">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-90">{title}</h2>
             <p className="mb-8 lg:mb-16 font-normal text-center text-gray-500 sm:text-xl">
                 En Abogado Eric Price podemos ayudarte a cumplir tus sueños de inmigración. Pide tu consulta gratuita
@@ -124,6 +129,7 @@ export default function Form() {
                     </div>
                 </div>
             </div>
-        </section>
+        </form>
     );
+    {/* </section> */ }
 }
