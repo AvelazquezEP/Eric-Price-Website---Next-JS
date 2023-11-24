@@ -7,7 +7,8 @@ import Image from "next/image";
 
 function NavLink({ to, children, id }) {
     return (
-        <Link href={to} className="text-white mx-4" key={id}>
+        <Link href={to} className="text-white mx-4
+        " key={id}>
             {children}
         </Link>
     )
