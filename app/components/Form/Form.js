@@ -1,3 +1,7 @@
+'use client'
+// import redirectSubmit from "/public/static/script";
+import redirectSubmit from "../../../public/static/script"
+
 let title = 'Contacto';
 let text_area_content = "By entering my mobile number and checking this box I agree to receive case status updates, meeting updates, and legal news notifications from Abogado Eric Price Los Angeles Immigration Attorneys. Message frequency varies. Text HELP to 94289 for help. Text STOP to 94289 to end. Msg & data rates may apply. By opting in, I authorize Abogado Eric Price Los Angeles Immigration Attorneys to deliver SMS messages using an automatic telephone dialing system and I understand that I am not required to opt in as a condition of purchasing any property, goods, or services. By leaving this box unchecked you will not be opted in for SMS messages at this time. Click to read";
 
@@ -114,8 +118,8 @@ export default function Form() {
                                 <button
                                     name="sendButton"
                                     id="ButtonSend"
+                                    // onClick={redirectSubmit()}
                                     // onClick='redirectSubmit()'
-                                    onClick={redirectSubmit()}
                                     className="bg-orange-400 w-11/12 py-2.5 px-5 mr-2 mb-2 text-xl font-medium text-white focus:outline-none rounded-lg border border-gray-200 focus:z-10 focus:ring-4 focus:ring-gray-200">
                                     Enviar
                                 </button>
@@ -129,6 +133,6 @@ export default function Form() {
     );
 }
 
-function redirectSubmit() {
-    return window.alert('ALERT TEST');
-}
+// function redirectSubmit() {
+//     return window.alert('ALERT TEST');
+// }

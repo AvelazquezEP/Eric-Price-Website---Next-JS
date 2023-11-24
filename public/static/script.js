@@ -1,5 +1,9 @@
 // SMALL TEST TO CALL THE SCRIPT
 
-const redirectSubmit = () => {
-    window.alert('ALERT TEST');
+export default function redirectSubmit() {
+    window.alert('TEST ALERT')
 }
+
+// const redirectSubmit = () => {
+//     window.alert('ALERT TEST');
+// }
