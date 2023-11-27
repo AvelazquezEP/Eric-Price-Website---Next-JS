@@ -43,3 +43,9 @@
             rgba(32, 32, 32, 0.9),
             rgba(22, 22, 22, 0.9)), url(/Images/lawCover.webp);
 }
+
+@media screen and (max-width: 1024px) {
+    .customOffice {
+        margin-left: 10%;
+    }
+}

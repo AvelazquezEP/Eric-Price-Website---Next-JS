@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import layouModule from '../layout.module.css';
+import Image from 'next/image';
 
 export default function Hero() {
     return (
@@ -37,14 +38,14 @@ export default function Hero() {
                 </div>
             </section>
             <section className='lg:w-1/2 p-3'>
-                {/* <Image
+                <Image
                     src='/images/EP_heroSection.png'
                     width={500}
                     height={500}
                     alt='Eric Price Picture'
                     className='mx-auto w-[27rem]'
                     loading='eager'
-                /> */}
+                />
             </section>
         </div >
     );

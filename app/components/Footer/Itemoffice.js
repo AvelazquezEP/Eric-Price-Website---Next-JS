@@ -5,8 +5,6 @@ import { itemOffice } from "../../Data/menuOffice";
 
 export default function Itemoffice({ link, name, description }) {
     return (
-        // <div className="grid grid-cols-2 gap-4 md:mx-auto"> {/* md:w-4/12 */}
-        //     {itemOffice.map(({ link, name, description }) =>
         <div className="flex items-center">
             <FontAwesomeIcon
                 icon={faLocation}

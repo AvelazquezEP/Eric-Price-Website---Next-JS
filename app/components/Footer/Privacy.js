@@ -5,20 +5,22 @@ let instagram_link = 'https://www.instagram.com/abogadoericprice';
 
 export default function Privacy() {
     return (
-        <div className="text-center flex flex-col items-center justify-center gap-3 md:flex-row md:justify-between">
-            <span className="text-sm text-gray-500 sm:text-center">
-                © 2023 <Link href="/index.html" className="hover:underline">Eric Price™</Link>. Todos los derechos reservados.
-            </span>
-            <div>
-                <ul className="flex flex-col text-gray-500 md:flex-row">
+        <div className="flex flex-col gap-5 px-4 mx-auto max-w-screen-xl md:flex-row items-center text-center">
+            <div className="md:w-4/12">
+                <span className="text-sm text-gray-500">
+                    © 2023 <Link href="/index.html" className="hover:underline">Eric Price™</Link>. Todos los derechos reservados.
+                </span>
+            </div>
+            <div className="md:w-4/12">
+                <ul className="text-gray-500">
                     <li>
-                        <Link href='/politica-de-privacidad' className="mr-4 hover:underline md:mr-6">
+                        <Link href='/politica-de-privacidad' className="hover:underline">
                             Política de Privacidad
                         </Link>
                     </li>
                 </ul>
             </div>
-            <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+            <div className="md:w-4/12 flex flex-row items-center justify-center space-x-6">
                 <Link href={facebook_link} className="text-gray-500">
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path fillRule="evenodd"
