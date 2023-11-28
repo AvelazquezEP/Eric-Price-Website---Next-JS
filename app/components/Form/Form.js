@@ -143,21 +143,17 @@ async function handleClick() {
 }
 
 const getData = async () => {
-    let URL = "https://abogadoericprice.com";
+    let URL = `https://abogadoericprice.com`;
 
-    const res = await fetch(URL, {
+    const res = await fetch(`https://abogadoericprice.com`, {
         method: 'GET',
         cache: 'force-cache',       // SSG  (getStaticProps)  // default
         cache: 'no-store',          // SSR  (getServerSideProps)
         next: { revalidate: 60 },  // ISR
         credentials: 'include'      // cross-origin cookies
-        // headers: {
-        //     'Accept': 'application/json, text/plain, */*',
-        //     'Content-Type': 'application/json'
-        // },        
     })
     try {
-        return res
+        return res.json()
     } catch (error) {
         return console.log('Error')
     }
