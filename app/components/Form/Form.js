@@ -1,6 +1,6 @@
-'use client'
+// 'use client'
 
-import { error } from "jquery";
+// import { error } from "jquery";
 
 let title = 'Contacto';
 let text_area_content = "By entering my mobile number and checking this box I agree to receive case status updates, meeting updates, and legal news notifications from Abogado Eric Price Los Angeles Immigration Attorneys. Message frequency varies. Text HELP to 94289 for help. Text STOP to 94289 to end. Msg & data rates may apply. By opting in, I authorize Abogado Eric Price Los Angeles Immigration Attorneys to deliver SMS messages using an automatic telephone dialing system and I understand that I am not required to opt in as a condition of purchasing any property, goods, or services. By leaving this box unchecked you will not be opted in for SMS messages at this time. Click to read";
@@ -135,28 +135,39 @@ export default function Form() {
     );
 }
 
-async function handleClick() {
-    // window.alert('test alert');
-    // const location_input = document.getElementById('00N5f00000SB1X0');
-    const response = await getData();
-    console.log(response);
+const handleClick = () => {
+    let url = "https://abogadoericprice.com/test.php";
+
+    request('get', url)
+        .then(data => console.log(data));
 }
 
-const getData = async () => {
-    let URL = `https://abogadoericprice.com`;
+// async function handleClick() {
+//     // window.alert('test alert');
+//     // const location_input = document.getElementById('00N5f00000SB1X0');
+//     // const response = await getData();
+//     // console.log(response);
+//     let url = "https://abogadoericprice.com/test.php"
+//     request('get', url)
+//         .then(data => console.log(data));
+// }
 
-    const res = await fetch(`https://abogadoericprice.com`, {
-        method: 'GET',
-        cache: 'force-cache',       // SSG  (getStaticProps)  // default
-        cache: 'no-store',          // SSR  (getServerSideProps)
-        next: { revalidate: 60 },  // ISR
-        credentials: 'include'      // cross-origin cookies
-    })
-    try {
-        return res.json()
-    } catch (error) {
-        return console.log('Error')
-    }
+const getData = async () => {
+    // let URL = `https://abogadoericprice.com/test.php`;
+
+    // // const res = await fetch(`https://abogadoericprice.com`, {
+    // const res = await fetch(URL, {
+    //     method: 'GET',
+    //     cache: 'force-cache',       // SSG  (getStaticProps)  // default
+    //     cache: 'no-store',          // SSR  (getServerSideProps)
+    //     // next: { revalidate: 60 },  // ISR
+    //     // credentials: 'include'      // cross-origin cookies
+    // })
+    // try {
+    //     return res.json()
+    // } catch (error) {
+    //     return console.log('Error')
+    // }
 }
 
 const getLocation = (location) => {
@@ -192,4 +203,14 @@ const getLocation = (location) => {
             break;
     }
     return code;
+}
+
+async function request(method, url = '') {
+    let data = await fetch(url, {
+        method: method.toUpperCase()
+    });
+
+    var json = await data.json();
+
+    return json;
 }
