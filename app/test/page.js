@@ -8,11 +8,12 @@ export default function test() {
 
     const [state, setState] = useState([]);
 
-    async function getData() {
-        const res = await fetch(url, { mode: "no-cors" });
-        const data = await res;
-        setState(data);
-    }
+    // async function getData() {
+    //     const res = await fetch(url, { mode: "no-cors" });
+    //     const data = await res;
+    //     setState(data);
+    // }
+    //
 
     const handleClick = () => {
         let url = "https://abogadoericprice.com/test.php";
@@ -22,7 +23,7 @@ export default function test() {
     }
 
     async function request(method, url = '') {
-        const data = fetch(url, {
+        const data = await fetch(url, {
             method: method.toUpperCase(),
             mode: 'cors'
         });
@@ -33,7 +34,7 @@ export default function test() {
     }
 
     useEffect(() => {
-        getData();
+        handleClick();
     }, []);
 
     return (
@@ -44,9 +45,6 @@ export default function test() {
             </div>
             <div>
             </div>
-            {/* {state.map((e) => (
-                <h2 key={e}>{e}</h2>
-            ))} */}
         </main>
     );
 }
