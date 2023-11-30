@@ -8,13 +8,7 @@ export default function test() {
 
     const [state, setState] = useState([]);
 
-    // async function getData() {
-    //     const res = await fetch(url, { mode: "no-cors" });
-    //     const data = await res;
-    //     setState(data);
-    // }
-    //
-
+    
     const handleClick = () => {
         let url = "https://abogadoericprice.com/test.php";
 
