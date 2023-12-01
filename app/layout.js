@@ -1,4 +1,8 @@
 // import { Inter } from 'next/font/google';
+'use client'
+
+import Script from 'next/script';
+
 import './globals.css';
 import Head from 'next/head';
 import Header from './components/Header/Header';
@@ -8,16 +12,17 @@ import Footer from './components/Footer/Footer';
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 // import './components/Form/loader'
+// import scriptt from "./components/Form/script" 
 
 config.autoAddCss = false;
 
 // const inter = Inter({ subsets: ['latin'] })
 export const siteTitle = "Eric Price - Immigration Attorney";
 
-export const metadata = {
-  title: siteTitle,
-  description: 'Attorney Eric Price website',
-}
+// export const metadata = {
+//   title: siteTitle,
+//   description: 'Attorney Eric Price website',
+// }
 
 // RootLayout
 export default function Layout({ children }) {
@@ -39,7 +44,16 @@ export default function Layout({ children }) {
         <meta name='keywords' content='abogados de inmigración, abogado de inmigración en los Angeles, abogado eric price, Eric price, abogado de inmigración, abogado para green card, abogado para permiso de trabajo, abogado para residencia, inmigración, abogados de inmigracion, residencia, green card, ciudadanía, petición familiar, Immigration, immigration attorney, immigration attorney los Angeles, immigration attorneys' />
         <meta name='og:title' content={siteTitle} />
         <script type='text/javascript' src="/static/script.js"></script>
+        <title>{siteTitle}</title>
       </Head>
+
+      <Script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+        strategy='lazyOnload'
+        onLoad={() =>
+          console.log(`script loaded correctly, Jquery has been populated`)
+        }
+      />
 
       <body className='bg-gray-50'>
         {/* HEADER SECTION */}
@@ -52,9 +66,21 @@ export default function Layout({ children }) {
         {/* FOOTER SECTION */}
         <Footer />
 
+        <Script
+          src="./js/script.js"
+          strategy='lazyOnload'
+          onLoad={() =>
+            console.log(`script loaded correctly, Jquery has been populated`)
+          }
+        />
         {/* <script src="./components/Header/toggle.js"></script> */}
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-        </script>
+        {/* <Script
+          src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+          strategy='lazyOnload'
+          onLoad={() =>
+            console.log(`script loaded correctly, window.FB has been populated`)
+          }
+        /> */}
         {/* <script src="../public/static/script.js"></script> */}
       </body>
     </html>

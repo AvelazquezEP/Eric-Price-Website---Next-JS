@@ -8,7 +8,7 @@ export default function test() {
 
     const [state, setState] = useState([]);
 
-    
+
     const handleClick = () => {
         let url = "https://abogadoericprice.com/test.php";
 
