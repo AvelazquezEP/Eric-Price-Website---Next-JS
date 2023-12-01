@@ -69,19 +69,10 @@ export default function Layout({ children }) {
         <Script
           src="./js/script.js"
           strategy='lazyOnload'
-          onLoad={() =>
-            console.log(`script loaded correctly, Jquery has been populated`)
-          }
+        // onLoad={() =>
+        //   console.log(`script loaded correctly, Jquery has been populated`)
+        // }
         />
-        {/* <script src="./components/Header/toggle.js"></script> */}
-        {/* <Script
-          src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
-          strategy='lazyOnload'
-          onLoad={() =>
-            console.log(`script loaded correctly, window.FB has been populated`)
-          }
-        /> */}
-        {/* <script src="../public/static/script.js"></script> */}
       </body>
     </html>
   )
