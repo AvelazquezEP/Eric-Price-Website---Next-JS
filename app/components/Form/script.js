@@ -32,8 +32,10 @@ $(document).ready(function () {
         var phone_number = location_input_validation(mobile);
         var email_validation = email_input_validation(email);
 
+        // log(`${firstName}, ${lastName}, ${email}, ${mobile}, ${location}, ${language}, ${meetingType}, ${message}, ${sms}`)
+
         if (name_input == true && location_input == true && phone_number == true && email_validation) {
-            sendData(firstName, lastName, email, mobile, location, language, meetingType, message, sms);
+            // sendData(firstName, lastName, email, mobile, location, language, meetingType, message, sms);           
         } else {
             setTimeout('$("#ButtonSend").removeAttr("disabled)', 3800);
         }
@@ -53,8 +55,9 @@ const sendData = (firstName, lastName, email, mobile, location, language, meetin
 
 const createLeadApi = (firstName, lastName, email, mobile, location, language, sms, comment = "-") => {
     $.ajax({
-        type: 'POST',
-        url: 'https://abogadoericprice.com/apiData.php',
+        type: 'GET',
+        // url: 'https://abogadoericprice.com/apiData.php',
+        url: 'https://abogadoericprice.com/test.php',
         data: {
             "FirstName": firstName,
             "LastName": lastName,
@@ -65,6 +68,87 @@ const createLeadApi = (firstName, lastName, email, mobile, location, language, s
             "Language__c": language,
             "SMS_Opt_In__c": sms,
             "comments": comment
+        },
+        dataType: 'json',
+        success: function (data) {
+            // console.log(data);
+
+
+            // var fullUrl = "";
+            // let leadID = data.id;
+
+            // let locationCode = getLocation(location); 
+
+            // let inPerson = "OUR_LOCATION";
+            // let byPhone = "VID_CONFERENCE";
+
+            // sendEmail(firstName, lastName, email, mobilePhone, language, leadID, comment);
+
+            // if (leadID == "" || leadID == null || leadID == undefined) {
+            //     let url_thanks = '/Thanks';
+            //     window.location.href = url_thanks;
+            // } else {
+            //     if (location != "National") {
+            //         fullUrl = `https://greencardla.my.site.com/s/onlinescheduler?processId=a1h5f000000nAJCAA2&locationType=${inPerson}&WhatId=a1n5f0000006fzTAAQ&WhereID=${locationCode}&sumoapp_WhoId=0055f000007NE9T&clientId=${leadID}`;
+            //     } else {
+            //         fullUrl = `https://greencardla.my.site.com/s/onlinescheduler?processId=a1h5f000000nAJZAA2&locationType=${byPhone}&WhatId=a1n5f0000006fzTAAQ&WhereID=a1b5f000000enBiAAI&sumoapp_WhoId=0055f000007NE9T&clientId=${leadID}`;
+            //     }
+
+            //     window.location.href = fullUrl;
+            // }
+        }, error: function (data) {
+            window.location.href = "/Thanks";
+        }
+    })
+}
+
+const getLocation = (location) => {
+    var code = "";
+    let LACode = "a1b5f000000eT4OAAU";
+    let OCCode = "a1b5f000000eT4PAAU";
+    let SDCode = "a1b5f000000eT8bAAE";
+    let SMCode = "a1b5f000000eT8gAAE";
+    let CHCode = "a1b5f000000enBnAAI";
+    let SBCode = "a1b5f000001signAAA";
+
+    switch (location) {
+        case "Los Angeles":
+            code = LACode;
+            break;
+        case "Orange County":
+            code = OCCode;
+            break;
+        case "San Diego":
+            code = SDCode;
+            break;
+        case "San Marcos":
+            code = SMCode;
+            break;
+        case "Chicago":
+            code = CHCode;
+            break;
+        case "San Bernardino":
+            code = SBCode;
+            break;
+        case "National":
+            code = LACode;
+            break;
+    }
+    return code;
+}
+
+const sendEmail = (firstName, lastName, email, mobile, language, leadID, comment) => {
+    $.ajax({
+        type: 'POST',
+        url: 'https://abogadoericprice.com/sendEmail.php',
+        data: {
+            "FirstName": firstName,
+            "lastName": lastName,
+            "Email": email,
+            "Mobile": mobile,
+            "Language": language,
+            "leadID": leadID,
+            "question": comment
         }
     })
 }

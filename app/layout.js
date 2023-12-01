@@ -1,22 +1,17 @@
-// import { Inter } from 'next/font/google';
 'use client'
 
-import Script from 'next/script';
-
 import './globals.css';
+import Script from 'next/script';
 import Head from 'next/head';
-import Header from './components/Header/Header';
-import Nav from './components/Header/Nav';
+// import Header from './components/Header/Header';
+// import Nav from './components/Header/Nav';
 import Navbar from './components/Header/navbar';
 import Footer from './components/Footer/Footer';
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-// import './components/Form/loader'
-// import scriptt from "./components/Form/script" 
 
 config.autoAddCss = false;
 
-// const inter = Inter({ subsets: ['latin'] })
 export const siteTitle = "Eric Price - Immigration Attorney";
 
 // export const metadata = {
@@ -24,7 +19,6 @@ export const siteTitle = "Eric Price - Immigration Attorney";
 //   description: 'Attorney Eric Price website',
 // }
 
-// RootLayout
 export default function Layout({ children }) {
   return (
     <html lang="en">
@@ -69,9 +63,6 @@ export default function Layout({ children }) {
         <Script
           src="./js/script.js"
           strategy='lazyOnload'
-        // onLoad={() =>
-        //   console.log(`script loaded correctly, Jquery has been populated`)
-        // }
         />
       </body>
     </html>

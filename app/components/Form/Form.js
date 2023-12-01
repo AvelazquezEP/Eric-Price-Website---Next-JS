@@ -1,10 +1,8 @@
-'use client'
-
+// 'use client'
 let title = 'Contacto';
 let text_area_content = "By entering my mobile number and checking this box I agree to receive case status updates, meeting updates, and legal news notifications from Abogado Eric Price Los Angeles Immigration Attorneys. Message frequency varies. Text HELP to 94289 for help. Text STOP to 94289 to end. Msg & data rates may apply. By opting in, I authorize Abogado Eric Price Los Angeles Immigration Attorneys to deliver SMS messages using an automatic telephone dialing system and I understand that I am not required to opt in as a condition of purchasing any property, goods, or services. By leaving this box unchecked you will not be opted in for SMS messages at this time. Click to read";
 
 export default function Form() {
-    // const router = useRouter()
 
     return (
         <section>
@@ -135,77 +133,4 @@ const handleClick = () => {
 
     request('get', url)
         .then(data => console.log(data));
-}
-
-// async function handleClick() {
-//     // window.alert('test alert');
-//     // const location_input = document.getElementById('00N5f00000SB1X0');
-//     // const response = await getData();
-//     // console.log(response);
-//     let url = "https://abogadoericprice.com/test.php"
-//     request('get', url)
-//         .then(data => console.log(data));
-// }
-
-const getData = async () => {
-    // let URL = `https://abogadoericprice.com/test.php`;
-
-    // // const res = await fetch(`https://abogadoericprice.com`, {
-    // const res = await fetch(URL, {
-    //     method: 'GET',
-    //     cache: 'force-cache',       // SSG  (getStaticProps)  // default
-    //     cache: 'no-store',          // SSR  (getServerSideProps)
-    //     // next: { revalidate: 60 },  // ISR
-    //     // credentials: 'include'      // cross-origin cookies
-    // })
-    // try {
-    //     return res.json()
-    // } catch (error) {
-    //     return console.log('Error')
-    // }
-}
-
-const getLocation = (location) => {
-    var code = "";
-    let LACode = "a1b5f000000eT4OAAU";
-    let OCCode = "a1b5f000000eT4PAAU";
-    let SDCode = "a1b5f000000eT8bAAE";
-    let SMCode = "a1b5f000000eT8gAAE";
-    let CHCode = "a1b5f000000enBnAAI";
-    let SBCode = "a1b5f000001signAAA";
-
-    switch (location) {
-        case "Los Angeles":
-            code = LACode;
-            break;
-        case "Orange County":
-            code = OCCode;
-            break;
-        case "San Diego":
-            code = SDCode;
-            break;
-        case "San Marcos":
-            code = SMCode;
-            break;
-        case "Chicago":
-            code = CHCode;
-            break;
-        case "San Bernardino":
-            code = SBCode;
-            break;
-        case "National":
-            code = LACode;
-            break;
-    }
-    return code;
-}
-
-async function request(method, url = '') {
-    let data = await fetch(url, {
-        method: method.toUpperCase()
-    });
-
-    var json = await data.json();
-
-    return json;
 }
