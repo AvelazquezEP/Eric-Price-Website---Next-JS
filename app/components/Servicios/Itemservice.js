@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Itemservice({ href, image, service }) {
+export default function Itemservice({ key, href, image, service }) {
     return (
         <Link href={href} className="bg-white pt-4 rounded-sm shadow-sm">
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center" id={key}>
                 <Image
                     src={image}
                     width={60}
