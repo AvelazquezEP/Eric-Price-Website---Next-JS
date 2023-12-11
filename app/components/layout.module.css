@@ -49,3 +49,12 @@
         margin-left: 10%;
     }
 }
+
+.test {
+    text-align: center;
+    background-color: rgb(235, 117, 117);
+    padding: 3rem 5rem;
+    border-radius: 0.6rem;
+    color: white;
+    font-weight: bold;
+}

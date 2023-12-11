@@ -15,17 +15,5 @@ export default function Itemservice({ href, image, service }) {
                 <h2 className="text-lg font-medium text-gray-900">{service}</h2>
             </div>
         </Link>
-        // <Link href="/" className="bg-white pt-4 rounded-sm shadow-sm">
-        //     <div>
-        //         <Image
-        //             src="/"
-        //             width={60}
-        //             height={60}
-        //             alt="Icon Service"
-        //             loading="lazy"
-        //         />
-        //         <h2 className="text-lg font-medium text-gray-900">Item 1</h2>
-        //     </div>
-        // </Link>
     );
 }

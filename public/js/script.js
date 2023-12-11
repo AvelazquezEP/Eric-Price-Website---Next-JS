@@ -58,7 +58,7 @@ const createLeadApi = (firstName, lastName, email, mobile, location, language, s
         //     "comments": comment
         // },
         // json
-        dataType: 'jsonp',
+        dataType: 'json',
         success: function (data) {
             console.log(data);
 

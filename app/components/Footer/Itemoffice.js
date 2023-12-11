@@ -18,7 +18,5 @@ export default function Itemoffice({ link, name, description }) {
                 </div>
             </Link>
         </div>
-        //     )}
-        // </div>
     );
 }
