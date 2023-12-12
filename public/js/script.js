@@ -5,25 +5,36 @@ $(document).ready(function () {
     $("#ButtonSend").on("click", function () {
         // $(this).attr("disabled", "disabled");
 
-        let firstName = document.getElementById("first_name").value;
-        let lastName = document.getElementById("last_name").value;
-        let email = document.getElementById("email").value;
-        let mobile = document.getElementById("mobile").value;
-        let location = document.getElementById("00N5f00000SB1X0").value;
-        let message = document.getElementById('message').value;
-        let language = document.getElementById('00N5f00000SB1Ws').value;
-        let meetingType = document.getElementById('meetingTypePerson').value;
-        let sms = document.getElementById("00N5f00000SB1XU").value;
+        // let firstName = document.getElementById("first_name").value;
+        // let lastName = document.getElementById("last_name").value;
+        // let email = document.getElementById("email").value;
+        // let mobile = document.getElementById("mobile").value;
+        // let location = document.getElementById("00N5f00000SB1X0").value;
+        // let message = document.getElementById('message').value;
+        // let language = document.getElementById('00N5f00000SB1Ws').value;
+        // let meetingType = document.getElementById('meetingTypePerson').value;
+        // let sms = document.getElementById("00N5f00000SB1XU").value;
 
-        var name_input = name_input_validation(firstName);
-        var location_input = location_input_validation(location);
-        var phone_number = location_input_validation(mobile);
-        var email_validation = email_input_validation(email);
+        // var name_input = name_input_validation(firstName);
+        // var location_input = location_input_validation(location);
+        // var phone_number = location_input_validation(mobile);
+        // var email_validation = email_input_validation(email);
+
+        let tfirstName = "lastname test";
+        let tlastName = "lastname test";
+        let temail = 'test@email.com';
+        let tmobile = '6875425968';
+        let tlocation = 'Los Angeles';
+        let tmessage = "test message";
+        let tlanguage = 'Spanish';
+        let tmeetingType = 'Phone';
+        let tsms = "Yes";
 
         // log(`${firstName}, ${lastName}, ${email}, ${mobile}, ${location}, ${language}, ${meetingType}, ${message}, ${sms}`)
 
         // if (name_input == true && location_input == true && phone_number == true && email_validation) {
-        sendData(firstName, lastName, email, mobile, location, language, meetingType, message, sms);
+        // sendData(firstName, lastName, email, mobile, location, language, meetingType, message, sms);
+        sendData(tfirstName, tlastName, temail, tmobile, tlocation, tmessage, tlanguage, tmeetingType, tsms);
         // } else {
         //     setTimeout('$("#ButtonSend").removeAttr("disabled)', 3800);
         // }
@@ -42,6 +53,25 @@ const sendData = (firstName, lastName, email, mobile, location, language, meetin
 }
 
 const createLeadApi = (firstName, lastName, email, mobile, location, language, sms, comment = "-") => {
+    let tfirstName = "lastname test";
+    let tlastName = "lastname test";
+    let temail = 'test@email.com';
+    let tmobile = '6875425968';
+    let tlocation = 'Los Angeles';
+    let tmessage = "test message";
+    let tlanguage = 'Spanish';
+    let tmeetingType = 'Phone';
+    let tsms = "Yes";
+
+    firstName = tfirstName;
+    lastName = tlastName;
+    email = temail;
+    mobile = tmobile;
+    location = tlocation;
+    language = "EP-CA-Website";
+    sms = tsms;
+    comment = tmessage;
+
     $.ajax({
         type: 'GET',
         // url: 'https://abogadoericprice.com/apiData.php',
@@ -56,8 +86,7 @@ const createLeadApi = (firstName, lastName, email, mobile, location, language, s
         //     "Language__c": language,
         //     "SMS_Opt_In__c": sms,
         //     "comments": comment
-        // },
-        // json
+        // },        
         dataType: 'json',
         success: function (data) {
             console.log(data);
@@ -84,8 +113,9 @@ const createLeadApi = (firstName, lastName, email, mobile, location, language, s
 
             //     window.location.href = fullUrl;
             // }
-        }, error: function () {
-            window.location.href = "/Thanks";
+        }, error: function (data) {
+            log(`Error: ${data}`)
+            // window.location.href = "/Thanks";
         }
     })
 }
