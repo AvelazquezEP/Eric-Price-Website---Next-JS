@@ -11,10 +11,17 @@ $(document).ready(function () {
         let mobile = document.getElementById("mobile").value;
         let location = document.getElementById("00N5f00000SB1X0").value;
         let language = document.getElementById('00N5f00000SB1Ws').value;
-        let meetingType = document.getElementById('meetingTypePerson').value;
+        // let meetingType = document.getElementById('meetingTypePerson').value;
         let message = document.getElementById('message').value;
-        let sms = "Yes";
         // let sms = document.getElementById("00N5f00000SB1XU").value;
+        var sms = '';
+        let sms_yes = document.getElementById('00N5f00000SB1XU1');
+        if (sms_yes.checked == true) {
+            sms = 'Yes';
+        } else {
+            sms = "No";
+        }
+        // let sms = "Yes";
 
         var name_input = name_input_validation(firstName);
         var location_input = location_input_validation(location);
@@ -39,12 +46,12 @@ $(document).ready(function () {
         //     setTimeout('$("#ButtonSend").removeAttr("disabled)', 3800);
         // }
 
-        sendData(firstName, lastName, email, mobile, location, language, meetingType, message, sms);
+        sendData(firstName, lastName, email, mobile, location, language, message, sms);
 
     });
 });
 
-const sendData = (firstName, lastName, email, mobile, location, language, meetingType, comment, sms) => {
+const sendData = (firstName, lastName, email, mobile, location, language, comment, sms) => {
 
     // document.getElementById('locationInput').innerHTML = '';
     // document.getElementById('nameInput').innerHTML = '';
@@ -52,11 +59,12 @@ const sendData = (firstName, lastName, email, mobile, location, language, meetin
     // document.getElementById('ButtonSend').style.backgroundColor = 'gray';
     // document.getElementById('ButtonSend').innerHTML = 'Sending Data';
 
-    createLeadApi(firstName, lastName, email, mobile, location, language, meetingType, sms, comment);
+    createLeadApi(firstName, lastName, email, mobile, location, language, sms, comment);
 }
 
 const createLeadApi = (firstName, lastName, email, mobile, location, language, sms, comment = "-") => {
 
+    // log(sms);
     $.ajax({
         type: 'POST',
         // url: 'https://abogadoericprice.com/apiData.php',
@@ -78,11 +86,10 @@ const createLeadApi = (firstName, lastName, email, mobile, location, language, s
 
             var fullUrl = "";
             let leadID = data.id;
-
             log(data);
 
             let locationCode = getLocation(location);
-            log(locationCode);
+            // log(locationCode);
 
             // let inPerson = "OUR_LOCATION";
             // let byPhone = "VID_CONFERENCE";

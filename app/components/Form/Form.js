@@ -92,7 +92,7 @@ export default function Form() {
                                 </label>
                                 <div className="radioGroup">
                                     <input type="radio" id="00N5f00000SB1XU1" name="00N5f00000SB1XU"
-                                        value="Yes" defaultChecked="true" />
+                                        value="Yes" defaultChecked={true} />
                                     <label className="ml-1">Estoy de acuerdo</label>
                                 </div>
                                 <div className="radioGroup">
@@ -111,7 +111,7 @@ export default function Form() {
                                 </textarea>
                             </div>
 
-                            <div>
+                            {/* <div>
                                 <div hidden id="recordTypeGroup">
                                     <div className="radioGroup">
                                         <input type="radio" id="meetingTypePhone" name="meetingType" value="Phone" />
@@ -122,7 +122,7 @@ export default function Form() {
                                         <label htmlFor="Idisagree" id="personTxt">En Persona</label>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div className="text-center mt-8">
                                 <button
