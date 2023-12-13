@@ -91,27 +91,25 @@ const createLeadApi = (firstName, lastName, email, mobile, location, language, s
             var fullUrl = "";
 
             let leadID = data.id;
-            log(leadID);
+            // log(leadID);
 
             let locationCode = getLocation(location);
             // log(locationCode);          
 
             sendEmail(firstName, lastName, email, mobile, language, leadID, comment);
 
-            // sendEmail(firstName, lastName, email, mobilePhone, language, leadID, comment);
+            if (leadID == "" || leadID == null || leadID == undefined) {
+                let url_thanks = '/Thanks';
+                window.location.href = url_thanks;
+            } else {
+                if (location != "National") {
+                    fullUrl = `https://greencardla.my.site.com/s/onlinescheduler?processId=a1h5f000000nAJCAA2&locationType=${inPerson}&WhatId=a1n5f0000006fzTAAQ&WhereID=${locationCode}&sumoapp_WhoId=0055f000007NE9T&clientId=${leadID}`;
+                } else {
+                    fullUrl = `https://greencardla.my.site.com/s/onlinescheduler?processId=a1h5f000000nAJZAA2&locationType=${byPhone}&WhatId=a1n5f0000006fzTAAQ&WhereID=a1b5f000000enBiAAI&sumoapp_WhoId=0055f000007NE9T&clientId=${leadID}`;
+                }
 
-            // if (leadID == "" || leadID == null || leadID == undefined) {
-            //     let url_thanks = '/Thanks';
-            //     window.location.href = url_thanks;
-            // } else {
-            //     if (location != "National") {
-            //         fullUrl = `https://greencardla.my.site.com/s/onlinescheduler?processId=a1h5f000000nAJCAA2&locationType=${inPerson}&WhatId=a1n5f0000006fzTAAQ&WhereID=${locationCode}&sumoapp_WhoId=0055f000007NE9T&clientId=${leadID}`;
-            //     } else {
-            //         fullUrl = `https://greencardla.my.site.com/s/onlinescheduler?processId=a1h5f000000nAJZAA2&locationType=${byPhone}&WhatId=a1n5f0000006fzTAAQ&WhereID=a1b5f000000enBiAAI&sumoapp_WhoId=0055f000007NE9T&clientId=${leadID}`;
-            //     }
-
-            //     window.location.href = fullUrl;
-            // }
+                window.location.href = fullUrl;
+            }
         }, error: function (data) {
             log(`Error: ${data}`)
             // window.location.href = "/Thanks";
