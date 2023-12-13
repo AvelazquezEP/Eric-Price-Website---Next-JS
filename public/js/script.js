@@ -28,6 +28,7 @@ $(document).ready(function () {
         var phone_number = location_input_validation(mobile);
         var email_validation = email_input_validation(email);
 
+        // #region PARAMS BY DEFAULT
         // let tfirstName = "lastname test";
         // let tlastName = "lastname test";
         // let temail = 'test@email.com';
@@ -36,7 +37,8 @@ $(document).ready(function () {
         // let tmessage = "test message";
         // let tlanguage = 'Spanish';
         // let tmeetingType = 'Phone';
-        // let tsms = "Yes";        
+        // let tsms = "Yes";
+        // #endregion
 
         // if (name_input == true && location_input == true && phone_number == true && email_validation) {
         //     sendData(firstName, lastName, email, mobile, location, language, meetingType, message, sms);
@@ -84,17 +86,19 @@ const createLeadApi = (firstName, lastName, email, mobile, location, language, s
         dataType: 'json',
         success: function (data) {
 
+            let inPerson = "OUR_LOCATION";
+            let byPhone = "VID_CONFERENCE";
             var fullUrl = "";
+
             let leadID = data.id;
-            log(data);
+            log(leadID);
 
             let locationCode = getLocation(location);
-            // log(locationCode);
+            // log(locationCode);          
 
-            // let inPerson = "OUR_LOCATION";
-            // let byPhone = "VID_CONFERENCE";
+            sendEmail(firstName, lastName, email, mobile, language, leadID, comment);
 
-            // // sendEmail(firstName, lastName, email, mobilePhone, language, leadID, comment);
+            // sendEmail(firstName, lastName, email, mobilePhone, language, leadID, comment);
 
             // if (leadID == "" || leadID == null || leadID == undefined) {
             //     let url_thanks = '/Thanks';
@@ -153,7 +157,7 @@ const getLocation = (location) => {
 const sendEmail = (firstName, lastName, email, mobile, language, leadID, comment) => {
     $.ajax({
         type: 'POST',
-        url: 'https://abogadoericprice.com/sendEmail.php',
+        url: 'https://abogadoericprice.com/test-sendEmail.php',
         data: {
             "FirstName": firstName,
             "lastName": lastName,
