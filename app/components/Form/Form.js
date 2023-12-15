@@ -111,19 +111,6 @@ export default function Form() {
                                 </textarea>
                             </div>
 
-                            {/* <div>
-                                <div hidden id="recordTypeGroup">
-                                    <div className="radioGroup">
-                                        <input type="radio" id="meetingTypePhone" name="meetingType" value="Phone" />
-                                        <label htmlFor="Agree" id="phoneTxt" check="true">Por teléfono</label>
-                                    </div>
-                                    <div className="radioGroup">
-                                        <input type="radio" id="meetingTypePerson" name="meetingType" value="Person" />
-                                        <label htmlFor="Idisagree" id="personTxt">En Persona</label>
-                                    </div>
-                                </div>
-                            </div> */}
-
                             <div className="text-center mt-8">
                                 <button
                                     name="sendButton"
