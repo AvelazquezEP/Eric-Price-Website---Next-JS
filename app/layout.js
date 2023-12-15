@@ -50,14 +50,12 @@ export default function Layout({ children }) {
       />
 
       <body className='bg-gray-50'>
-        {/* HEADER SECTION */}
-        {/* <Nav /> */}
         <Navbar />
 
         {/* MAIN CONTENT */}
         {children}
 
-        {/* FOOTER SECTION */}
+        {/* FOOTER SECTION - this repeat in all pages */}
         <Footer />
 
         <Script
