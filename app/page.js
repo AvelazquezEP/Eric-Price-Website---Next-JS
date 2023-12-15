@@ -12,6 +12,8 @@ import Form from './components/Form/Form';
 import Footer from './components/Footer/Footer';
 
 export default function Home() {
+  // This is the index page and the Main tag is the Children tag in the layout, in this way we can render al the content
+  // and this index have the nav and footer
   return (
     <Main>
       <Header />
@@ -22,8 +24,7 @@ export default function Home() {
       <Faq />
       <Testimonios />
       <Blog />
-      <Form />
-      {/* <Footer /> */}
+      <Form />      
     </Main>
   )
 }
