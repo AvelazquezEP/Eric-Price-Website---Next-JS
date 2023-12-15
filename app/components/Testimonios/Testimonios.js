@@ -2,6 +2,7 @@ import Title from "../utils/title";
 import TestimonioItem from "./TestimonioItem";
 import Link from "next/link";
 
+// We can manage the title of the site with this string
 let title = 'No nos creas a nosotros, mira lo que nuestros clientes dicen';
 
 export default function Testimonios() {
