@@ -40,14 +40,6 @@ $(document).ready(function () {
         // let tsms = "Yes";
         // #endregion
 
-        // if (name_input == true && location_input == true && phone_number == true && email_validation) {
-        //     sendData(firstName, lastName, email, mobile, location, language, meetingType, message, sms);
-
-        //     sendData(tfirstName, tlastName, temail, tmobile, tlocation, tmessage, tlanguage, tmeetingType, tsms);
-        // } else {
-        //     setTimeout('$("#ButtonSend").removeAttr("disabled)', 3800);
-        // }
-
         sendData(firstName, lastName, email, mobile, location, language, message, sms);
 
     });
@@ -91,10 +83,8 @@ const createLeadApi = (firstName, lastName, email, mobile, location, language, s
             var fullUrl = "";
 
             let leadID = data.id;
-            // log(leadID);
 
             let locationCode = getLocation(location);
-            // log(locationCode);          
 
             sendEmail(firstName, lastName, email, mobile, language, leadID, comment);
 
