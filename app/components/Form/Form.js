@@ -62,7 +62,7 @@ export default function Form() {
                                 <label htmlFor="mobile" className="block mb-2 text-sm font-medium text-gray-900">
                                     Lugar
                                 </label>
-                                
+
                                 <select id="00N5f00000SB1X0" name="00N5f00000SB1X0" title="Location"
                                     className="shadow-sm bg-white border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
                                     <option value="">--None--</option>
