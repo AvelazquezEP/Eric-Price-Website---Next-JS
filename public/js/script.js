@@ -101,8 +101,7 @@ const createLeadApi = (firstName, lastName, email, mobile, location, language, s
                 window.location.href = fullUrl;
             }
         }, error: function (data) {
-            log(`Error: ${data}`)
-            // window.location.href = "/Thanks";
+            log(`Error: ${data}`)            
         }
     })
 }
