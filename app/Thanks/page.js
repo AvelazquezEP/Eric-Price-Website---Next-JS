@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+// this its the thanks site/page
 export default function test() {
     return (
         <main className="flex items-center justify-center h-screen bg-[#001E3E]">

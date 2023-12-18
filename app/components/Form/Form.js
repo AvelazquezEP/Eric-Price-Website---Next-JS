@@ -1,4 +1,4 @@
-// 'use client'
+// This is the form in the 
 let title = 'Contacto';
 let text_area_content = "By entering my mobile number and checking this box I agree to receive case status updates, meeting updates, and legal news notifications from Abogado Eric Price Los Angeles Immigration Attorneys. Message frequency varies. Text HELP to 94289 for help. Text STOP to 94289 to end. Msg & data rates may apply. By opting in, I authorize Abogado Eric Price Los Angeles Immigration Attorneys to deliver SMS messages using an automatic telephone dialing system and I understand that I am not required to opt in as a condition of purchasing any property, goods, or services. By leaving this box unchecked you will not be opted in for SMS messages at this time. Click to read";
 
@@ -48,7 +48,7 @@ export default function Form() {
 
                             <div>
                                 <label htmlFor="mobile" className="block mb-2 text-sm font-medium text-gray-900">
-                                    Teléfono Moviil
+                                    Teléfono Movil
                                 </label>
                                 <input id="mobile" type="text" name="mobile" maxLength={10} size={20}
                                     className="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
@@ -62,6 +62,7 @@ export default function Form() {
                                 <label htmlFor="mobile" className="block mb-2 text-sm font-medium text-gray-900">
                                     Lugar
                                 </label>
+                                
                                 <select id="00N5f00000SB1X0" name="00N5f00000SB1X0" title="Location"
                                     className="shadow-sm bg-white border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5">
                                     <option value="">--None--</option>
