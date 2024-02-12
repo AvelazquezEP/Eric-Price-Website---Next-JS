@@ -3,8 +3,6 @@
 import './globals.css';
 import Script from 'next/script';
 import Head from 'next/head';
-// import Header from './components/Header/Header';
-// import Nav from './components/Header/Nav';
 import Navbar from './components/Header/navbar';
 import Footer from './components/Footer/Footer';
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -13,11 +11,6 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 
 export const siteTitle = "Eric Price - Immigration Attorney";
-
-// export const metadata = {
-//   title: siteTitle,
-//   description: 'Attorney Eric Price website',
-// }
 
 export default function Layout({ children }) {
   return (
